@@ -18,7 +18,7 @@
 
 ## What fails but is expected to work
 
-- `kustomize build overlays/demo`
+- `kustomize build overlays/both`
 
 Error message :
 
