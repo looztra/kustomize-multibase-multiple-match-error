@@ -23,8 +23,23 @@
 Error message :
 
 ```bash
-─» kustomize build overlays/both
+╰─» asdf global kustomize v2.0.3
+╰─» kustomize build overlays/both/
 Error: Multiple matches for name ~G_v1_ServiceAccount|apps-integration|~P|faros|~S:
   [~G_v1_ServiceAccount|apps-integration|~P|faros|~S ~G_v1_ServiceAccount|apps-demo|~P|faros|~S]
+
+╰─» asdf global kustomize v2.1.0
+╰─» kustomize build overlays/both/
+Error: string case - multiple matches for ~G_v1_ServiceAccount|~X|faros:
+  [~G_v1_ServiceAccount|apps-demo|faros
+ ~G_v1_ServiceAccount|apps-integration|faros
+]
+
+╰─» asdf global kustomize v3.0.2
+╰─» kustomize build overlays/both/
+Error: string case - multiple matches for ~G_v1_ServiceAccount|~X|faros:
+  [~G_v1_ServiceAccount|apps-demo|faros
+ ~G_v1_ServiceAccount|apps-integration|faros
+]
 
 ```
